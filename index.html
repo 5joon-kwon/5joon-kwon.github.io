@@ -1,18 +1,67 @@
-<a href="./assets/portfolio/portfolio.pdf" download class="download-btn">
-  포트폴리오 다운로드
-</a>
+<section class="portfolio-download">
+  <h2>Portfolio</h2>
+  <p>포트폴리오를 온라인으로 확인하거나 PDF로 다운로드할 수 있습니다.</p>
+
+  <div class="portfolio-buttons">
+    <a
+      href="./assets/portfolio/portfolio.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn-preview"
+    >
+      미리보기
+    </a>
+
+    <a href="./assets/portfolio/portfolio.pdf" download class="btn btn-download"> 다운로드 </a>
+  </div>
+</section>
 
 <style>
-  .download-btn {
-    display: inline-block;
-    padding: 12px 20px;
-    background: #111827;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    font-weight: 600;
+  .portfolio-download {
+    text-align: center;
+    padding: 60px 20px;
   }
-  .download-btn:hover {
-    opacity: 0.9;
+
+  .portfolio-download h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+
+  .portfolio-download p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 24px;
+  }
+
+  .portfolio-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+
+  .btn-preview {
+    background-color: #111827;
+    color: white;
+  }
+
+  .btn-download {
+    background-color: white;
+    color: #111827;
+    border: 1px solid #111827;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
   }
 </style>
